@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<!-- body design  -->
+
+<body style="background-color: white">
+    <form id="candidatename" method="post">
+        <!-- heading -->
+        <h2 style="text-align: center;margin-top: 75px;">CANDIDATE NAME LIST</h2><br>
+        <div class="form-group">
+
+            <label>NAME :</label>
+            <input type="text" style="width:100%;" id="name" placeholder="NAME" required="">
+        </div>
+        <div class="form-group">
+            <label>ADDRESS :</label>
+            <input type="text" id="address" placeholder="ADRESS" style="width: 100%;" required="">
+        </div>
+        <div class="form-group">
+            <label>GENDER :</label>
+            <select id="gender" style="width: 100%;">
+                <option value="male">MALE</option>
+                <option value="female">FEMALE</option>
+                <option value="other">OTHERS</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>AGE :</label>
+            <input type="number" style="width: 100%;" id="age" placeholder="AGE" required="">
+        </div><br>
+        <div>
+            <button type="button" style="background-color: green;color: white; width: 120px;" id="addrow">ADD </button>
+        </div>
+
+
+        <!-- nominating table  -->
+
+
+        </div><br>
+        <table id="table">
+            <thead>
+                <div>
+                    <tr>
+                        <th>NAME</th>
+                        <th>ADDRESS</th>
+                        <th>GENDER</th>
+                        <th>AGE</th>
+                        <th>ACTION</th>
+                    </tr>
+                </div>
+            </thead>
+            <tbody id="tbody1">
+                <div>
+                </div>
+            </tbody>
+        </table><br><br><br>
+
+        <div>
+            <center>
+                <button type="button" id="submit"
+                    style="color: black; background-color: rgb(97, 217, 233); width: 200px;height: 30px; font-size:  small;display: none;"  >
+                    SUBMIT</button>
+            </center>
+        </div>
+    </form>
+
+
+    <!-- voting table  -->
+
+
+    <form id="votingtable" style="display:none;">
+
+        <h2 style="margin-top: 100px; text-align: center;"><b>VOTING DAY</b></h2><br>
+        <table id="table2">
+            <thead>
+                <div>
+                    <tr>
+                        <th id="n">NAME</th>
+                        <th id="v">VOTE HERE</th>
+                        <th id="v" style="display: none;">VOTES</th>
+                    </tr>
+                </div>
+            </thead>
+            <tbody id="tbody2">
+
+            </tbody>
+        </table><br><br>
+        <div>
+            <center>
+                <button type="button" id="resultbttn"
+                    style="background-color: black; color: white; width: 200px;">SHOW  RESULT</button>
+            </center>
+        </div>
+
+    </form>
+
+
+
+
+    <!-- RESULT TABLE  -->
+
+
+
+    <form id="resulttable" style="display:none;">
+
+        <h2 style="margin-top: 100px; text-align: center;"><b>RESULT</b></h2><br>
+
+        <div class="row">
+            <div>
+                <table id="table3">
+                    <thead>
+                        <div>
+                            <tr>
+                                <th>NAME</th>
+                                <th>NUMBER OF VOTES</th>
+                            </tr>
+                        </div>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div><br>
+
+            <div>
+                <center>
+
+                <label id="win_name" style="font-size: large; color: green;"><b></b></label>
+                <label id="win" style="font-size: large; color: green; display: none ;"><b>IS WINNER...!</b></label>
+                </center>
+            </div>
+    </form>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

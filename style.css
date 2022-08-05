@@ -1,0 +1,87 @@
+/* <!-- design for candidate table --> */
+/* <style> */
+    #candidatename {
+        margin-top: 50px;
+        margin-left: 400px;
+        background-color: whitesmoke;
+        height: 850px;
+        width: 1050px;
+        border-radius: 50px;
+        padding: 5px 40px;
+        box-shadow: 0 10px 25px black;
+    }
+
+    /* table design  */
+    #table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table tr {
+        border: 1px solid black;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+/* </style>
+<style> */
+    #votingtable {
+        margin-top: 150px;
+        margin-left: 575px;
+        background-color: whitesmoke;
+        height: 650px;
+        width: 450px;
+        border-radius: 50px;
+        padding: 5px 40px;
+        box-shadow: 0 10px 25px black;
+    }
+
+    /* table design  */
+    #table2 {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table tr {
+        border: 1px solid black;
+
+    }
+
+    th,
+    td {
+        text-align: center;
+        padding: 8px;
+    }
+/* </style> */
+/* <style> */
+    #resulttable {
+        margin-top: 150px;
+        margin-left: 575px;
+        background-color: whitesmoke;
+        height: 650px;
+        width: 450px;
+        border-radius: 50px;
+        padding: 5px 40px;
+        box-shadow: 0 10px 25px black;
+    }
+
+    /* table design  */
+    #table3 {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table tr {
+        border: 1px solid black;
+
+    }
+
+    th,
+    td {
+        text-align: center;
+        padding: 8px;
+    }
+/* </style> */
